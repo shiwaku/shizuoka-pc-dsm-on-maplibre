@@ -89,7 +89,7 @@
                     // 3次元点群データ（3D Tiles）を表示するレイヤーを追加
                     new deck.Tile3DLayer({
                         id: "pc-3dtiles", // レイヤーIDを設定
-                        data: "https://shiworks.xsrv.jp/3dtiles/shizuoka-pc/sunen-substation/tileset.json", // 3D TilesのURL
+                        data: "https://shi-works.com/3dtiles/shizuoka-pc/sunen-substation/tileset.json", // 3D TilesのURL
                         opacity: 1, // レイヤーの不透明度を設定（1は完全に不透明）
                         pointSize: 1, // 3次元点群データのポイントのサイズを設定
                         onTileLoad: (d) => {
@@ -157,7 +157,7 @@
             map2.addSource("dsm", {
                 type: 'raster-dem',
                 tiles: [
-                    'gsidem://https://shiworks.xsrv.jp/raster-tiles/pref-shizuoka/shizuoka-dsm-sample-tiles/{z}/{x}/{y}.png',
+                    'gsidem://https://shi-works.com/raster-tiles/pref-shizuoka/shizuoka-dsm-sample-tiles/{z}/{x}/{y}.png',
                     // 'gsidem://https://cyberjapandata.gsi.go.jp/xyz/dem_png/{z}/{x}/{y}.png',
                 ],
                 attribution: '<a href="https://www.geospatial.jp/ckan/dataset/virtual-shizuoka-mw" target="_blank">VIRTUAL SHIZUOKA 静岡県 中・西部 点群データ</a>',
@@ -171,7 +171,7 @@
             map2.addSource("dsm-raster", {
                 type: 'raster',
                 tiles: [
-                    'https://shiworks.xsrv.jp/raster-tiles/pref-shizuoka/shizuoka-dsm-sample-tiles/{z}/{x}/{y}.png',
+                    'https://shi-works.com/raster-tiles/pref-shizuoka/shizuoka-dsm-sample-tiles/{z}/{x}/{y}.png',
                     // 'https://cyberjapandata.gsi.go.jp/xyz/dem_png/{z}/{x}/{y}.png',
                 ],
                 attribution: '<a href="https://www.geospatial.jp/ckan/dataset/virtual-shizuoka-mw" target="_blank">VIRTUAL SHIZUOKA 静岡県 中・西部 点群データ</a>',
